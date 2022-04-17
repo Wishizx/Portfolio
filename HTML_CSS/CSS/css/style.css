@@ -1,0 +1,113 @@
+/* 
+
+write your code here
+
+*/
+/* --------PRINT-------- */
+@media print {
+    .tm-sidebar, .blocks, .gallery-container, section::before, .carousel, .heading, .img-contact-us, #contact{
+        display: none;
+    }
+    .flex-item h2{
+        color: blue;
+    }
+}
+/* -------COMMON-------- */
+h2+p{
+    font-style: italic;
+}
+.tm-team-description-container p{
+    text-indent: 24px;
+}
+section::before {
+    content: '';
+    width: 0; 
+    height: 0;
+    border-top: 30px solid #87cefa;
+    border-right: 200px solid transparent;
+}
+.tm-banner-text::first-letter, .tm-section-description::first-letter{
+    font-size: 30px;
+    color:#87CEFA;
+}
+section, .margin-b-10,.tm-main-nav{		
+    box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.42);
+  }
+  .tm-banner{
+    background: #F5F5F5;
+   }
+   .tm-banner-inner{
+     background-color: white;
+   }
+ 
+   .tm-section-title{
+       color: gainsboro;
+   }
+   .carousel-content .flex-item .tm-section-title{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+/* --------NAV------- */
+.tm-nav-item:hover{
+    background-color:#F5F5F5 ;
+ }
+ /* -------HERO------- */
+ .flex-2-col{
+    display: flex;
+    align-items: center;
+}
+ 
+/* ---------gallery-container------- */
+.box-bg {
+    transition: all 0.5s;
+}
+.box-bg:hover {
+    background-color:lightskyblue;
+}
+.tm-box-bg-title:hover{
+    color: white;
+    font-weight: bold;
+}
+/* ----------OUR-WORK---------- */
+  .box-work {
+    padding: 8px;
+  }
+  .box-work p::first-letter {
+      font-size: 30px;
+      color: black;
+  }
+  .gallery-container .box-work:nth-of-type(even) {
+      background-color: #f5f5f5
+  }
+  /* -----------WE ARE----------- */
+  section.heading.tm-content-box .padding-medium li>a.text::after {
+    content: "New";
+    color: red;
+    font-size: xx-small;
+    line-height: 0;
+    vertical-align: super;
+  }
+  .heading a {
+    text-decoration: none;
+  }
+  .heading a:hover {
+    text-decoration: underline;
+    text-decoration-style: double;
+  }
+  /* ----FORM-AND-BUTTON----- */
+  .mandatory-field::after{
+    content: "*";
+    font-size: inherit;;
+    color: red;
+  }
+  .submit-btn{
+      color: #9fd8fb;
+      background-color: white;
+      border-color: #9fd8fb;
+      border-radius: 0;
+  }
+  .submit-btn:hover{
+      background-color: #9fd8fb;
+      color: white;
+      border-color: #9fd8fb;
+  }

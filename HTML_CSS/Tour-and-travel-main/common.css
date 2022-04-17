@@ -1,0 +1,132 @@
+.container {
+  max-width: 1304px;
+  margin: auto;
+  padding: 0 16px;
+}
+.button {
+  width: 164px;
+  height: 48px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #fb8f1d;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.view-all-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fb8f1d;
+}
+.view-all__img {
+  display: inline;
+  margin-left: 10px;
+}
+.headlines {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #000;
+}
+/* --------------DESTINATIONS-COMMON----------- */
+.destination-example__country {
+  position: relative;
+}
+.destination__img-block {
+  height: 332px;
+  width: 261px;
+}
+.destination__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+.destination-example__place-for-text {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 120px;
+  height: 56px;
+  border-top-right-radius: 6px;
+  background-color: white;
+}
+.destination-example__place-to-visite {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 11px;
+}
+.destination-example__country-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #80918e;
+}
+/* ---------------STORIES-COMMONS------------- */
+.stories__img {
+  max-width: 261px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  /* max-height: 231px; */
+}
+.stories__img-block {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 13px;
+}
+.stories__head-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 30px;
+  margin-bottom: 13px;
+}
+.stories__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  color: #7d7987;
+  margin-bottom: 23px;
+}
+.read-more-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  color: #fb8f1d;
+}
+/* ---------FOOTER-COMMONS---------- */
+.footer__links-head {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 60px;
+}
+.footer__links {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+  color: #848484;
+}
+.footer__links-block {
+  column-count: 1;
+}

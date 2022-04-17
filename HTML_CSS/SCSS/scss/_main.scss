@@ -1,0 +1,209 @@
+// Write your styles here
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+  }
+
+$font-hind: 'Hind', sans-serif;
+$font-fresca: 'Fresca', sans-serif;
+$font-sans: 'Source Sans Pro', sans-serif;
+@mixin buttons {
+  height: 50px;
+        width: 142px;
+        margin-right: 152px;
+        background-color: $button-color;
+        color: white;
+        font-family: $font-sans;
+        border-radius: 4px;  
+}
+body{
+  background-color: $bg-color;
+}
+.header{
+    background-image: $bg-img-day;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-bottom-right-radius: 900px 240px;
+    .header-wrap {
+    max-width: 1304px;
+    margin: 0 auto;
+    padding: 0 16px;
+    .landing-logo{
+        max-width: 116px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 90px;
+        padding-top: 20px;
+        p{
+            font-family: $font-hind;
+            color: $font-dblue;
+            font-weight: 600;
+            display: block;
+            .logo-bot{
+              font-size: 10px;
+              display: block;
+            }
+        }
+    }
+    .header_heading{
+        font-family: $font-sans;
+        font-size: 48px;
+        font-weight: 800;
+        color: $font-dblue;
+        max-width: 500px;
+        line-height: 46px;
+        margin-bottom: 62px;
+        span{
+          background-color: $bcolor-head;
+        }
+    }
+    .header_text{
+      font-family: $font-hind;
+      max-width: 654px;
+      color: $font-dblue;
+      margin-bottom: 66px;
+    }
+    .autorization{
+      padding-bottom: 174px;
+      .header_button{
+        @include buttons();
+      }
+      .login{
+        font-family: $font-sans;
+        color: white;
+      }
+    }
+  }
+}
+.section{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .section_text{ 
+      font-family: $font-hind;
+      font-size: 32px;
+      font-weight: 550;
+      color: $font-dblue;
+      margin-top: 20px;
+      margin-bottom: 28px;
+      .adventure{
+        background-color: $bcolor-head;
+      }
+    }
+    .section_card_wrap{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      .section_card{
+        display: flex;
+        max-width: 1116px;
+        max-height: 326px;
+        background-color: $card-bgcolor;
+        border-radius: 6px;
+        .section_card_img{
+          padding: 12px;
+          border-radius: 20px;
+        }
+        .section_card_right_container{
+          max-width: 470px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 26px;
+          .section_card_heading{
+            color: white;
+            font-family: $font-hind;
+          }
+          .section_card_text{
+            color: grey;
+            font-family: $font-hind;
+            font-size: 14px;
+          }
+          .section_link{
+            color: grey;
+            font-family: $font-hind;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .section_banner{
+      margin-top: 142px;
+      display: flex;
+      justify-content: space-around;
+      width: 1200px;
+      max-height: 146px;
+      background: $gradient;
+      border-radius: 4px;
+      padding: 36px 0;
+      margin-bottom: -66px;
+      .section_banner_text_wrap{
+        .section_banner_heading{
+          font-family: $font-hind;
+          font-size: 20px;
+          color: $font-dblue;
+          font-weight: bold;
+          .adventure{
+            background-color: $bcolor-head;
+          }
+        }
+        .section_banner_text{
+          font-family: $font-hind;
+          color: white;
+          font-size: 14px;
+          padding-top: 8px;
+        }
+      }
+      .section_banner_button{
+        @include buttons();
+      }
+    }
+}
+.footer{
+  background-color: $card-bgcolor;
+  .footer-wrap{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 130px;
+    padding-bottom: 60px;
+    align-items: center;
+    .footer_logo{
+      max-width: 116px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 90px;
+      padding-top: 20px;
+      p{
+          font-family: $font-hind;
+          color: white;
+          font-weight: 600;
+          display: block;
+          padding-left: 20px;
+          .logo-bot{
+            font-size: 10px;
+            display: block;
+          }
+      }
+  }
+    .footer_text{
+      max-width: 300px;
+      color: grey;
+      font-family: $font-hind;
+    }
+    .footer-cr{
+      color: grey;
+      font-family: $font-hind;
+    }
+  }
+}
+
